@@ -1,0 +1,105 @@
+# Artificial Intelligence and Machine Learning
+
+## 1. What is Artificial Intelligence?
+
+Artificial Intelligence (AI) is a branch of computer science that focuses on creating systems capable of performing tasks that typically require human intelligence. These tasks include understanding language, recognizing images, solving problems, making decisions, and learning from experience.
+
+Common applications of AI include virtual assistants, recommendation systems, fraud detection, autonomous vehicles, and medical image analysis.
+
+## 2. What is Machine Learning?
+
+Machine Learning (ML) is a subset of Artificial Intelligence that enables computers to learn patterns from data and make predictions without being explicitly programmed for every possible situation.
+
+There are three major types of machine learning:
+
+* Supervised Learning: Models learn from labeled data. Examples include spam detection, house price prediction, and image classification.
+* Unsupervised Learning: Models discover patterns in unlabeled data. Examples include customer segmentation and anomaly detection.
+* Reinforcement Learning: Agents learn to make decisions by interacting with an environment and receiving rewards or penalties. Examples include game-playing agents and robotic control.
+
+## 3. What is Deep Learning?
+
+Deep Learning is a subset of machine learning that uses neural networks with multiple layers to learn complex patterns from large datasets.
+
+Convolutional Neural Networks (CNNs) are commonly used for image classification, object detection, and image segmentation. Recurrent Neural Networks (RNNs) and Long Short-Term Memory networks (LSTMs) have been used for sequential data and time-series analysis. Transformer architectures are widely used in modern natural language processing and generative AI.
+
+Deep learning often requires significant computational resources and large amounts of training data.
+
+## 4. What are Large Language Models?
+
+Large Language Models (LLMs) are AI models trained on large text datasets to understand and generate human language. They can summarize documents, answer questions, generate code, translate text, and assist with information retrieval.
+
+Examples of LLM families include GPT, Llama, Mistral, and Qwen.
+
+LLMs can sometimes produce incorrect or unsupported answers, a problem commonly called hallucination. Providing relevant context and checking the model's responses can help reduce this risk.
+
+## 5. What is Retrieval-Augmented Generation?
+
+Retrieval-Augmented Generation (RAG) combines document retrieval with language generation. Instead of relying only on information learned during training, an application retrieves relevant information from an external knowledge source and supplies it to a language model as context.
+
+A typical RAG pipeline includes these steps:
+
+1. Load documents from text files, PDFs, or other sources.
+2. Split documents into smaller chunks.
+3. Convert chunks into numerical vectors using an embedding model.
+4. Store the vectors in a vector database.
+5. Convert the user's question into an embedding and retrieve relevant chunks.
+6. Pass the retrieved context and question to a language model.
+7. Generate an answer based on the retrieved information.
+
+RAG is useful for company knowledge bases, document question-answering systems, technical support assistants, and research tools.
+
+## 6. What are Embeddings?
+
+Embeddings are numerical representations of text, images, or other data. Text embeddings represent semantic information in vector form, allowing systems to compare the meaning of different pieces of text.
+
+For example, the sentences "Machine learning enables computers to learn from data" and "ML systems discover patterns in examples" have related meanings, even though their wording differs.
+
+Embedding models such as sentence-transformers/all-MiniLM-L6-v2 can generate text embeddings. These vectors can then be compared using similarity measures such as cosine similarity.
+
+## 7. What is FAISS?
+
+FAISS stands for Facebook AI Similarity Search. It is a library developed by Meta AI for efficient similarity search and clustering of dense vectors.
+
+FAISS can index document embeddings and retrieve vectors similar to a query embedding. In LangChain, FAISS can be used as a vector store for retrieval-augmented generation applications.
+
+FAISS is a vector search library, not a language model. It retrieves relevant information but does not independently generate natural-language answers.
+
+## 8. What is LangChain?
+
+LangChain is a framework for building applications powered by language models. It provides integrations for chat models, embedding models, document loaders, retrievers, vector stores, prompts, and runnable pipelines.
+
+Important LangChain components include:
+
+* Document loaders: Read content from files and other sources.
+* Text splitters: Divide long documents into smaller chunks.
+* Embeddings: Convert text into numerical vectors.
+* Vector stores: Store and search embeddings.
+* Retrievers: Fetch relevant documents for a query.
+* Prompt templates: Organize instructions and input variables.
+* Chat models: Generate responses from messages and context.
+
+These components can be combined to create RAG applications.
+
+## 9. What is Computer Vision?
+
+Computer Vision is a field of AI that enables computers to interpret and analyze visual information such as images and videos.
+
+Common computer vision tasks include:
+
+* Image classification: Assigning a label to an image.
+* Object detection: Identifying objects and locating them with bounding boxes.
+* Image segmentation: Assigning labels to individual pixels or image regions.
+* Face recognition: Comparing facial features to identify or verify a person.
+* Optical Character Recognition: Extracting text from images and scanned documents.
+
+Computer vision is used in manufacturing inspection, traffic monitoring, medical imaging, security systems, and autonomous robotics.
+
+## 10. Benefits and Limitations of AI
+
+AI can automate repetitive tasks, analyze large datasets, support decision-making, and improve productivity. However, AI systems can also make mistakes, inherit biases from training data, consume significant computational resources, and raise privacy and security concerns.
+
+Responsible AI development involves evaluating model performance, protecting sensitive data, monitoring deployed systems, and ensuring that human oversight is available when necessary.
+
+## Conclusion
+
+Artificial Intelligence includes several interconnected fields, including machine learning, deep learning, natural language processing, and computer vision. Frameworks such as LangChain make it easier to connect language models with external data, while embedding models and FAISS enable semantic document retrieval. Together, these technologies can be used to build practical applications that answer questions about private documents and structured knowledge sources.
