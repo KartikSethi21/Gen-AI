@@ -1,4 +1,3 @@
-
 import os
 
 # Hugging Face integration for embeddings and hosted language models
